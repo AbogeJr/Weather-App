@@ -1,0 +1,80 @@
+@font-face {
+    font-family: weather;
+    src: url(weather.otf);
+}
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 200ms;
+}
+body {
+    background-image: url(map.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#weather-data {
+    width: 50%;
+    margin: auto;
+    background: rgba(255,255,255,0.7);
+    border: 1px solid black;
+    padding: 50px;
+}
+#title {
+    width: 100%;
+    text-align: center;
+}
+#city-name{
+    padding: 15px;
+    width: 60%;
+}
+#button {
+    padding: 15px;
+    border: 1px solid black;
+    background: lightblue;
+}
+#button:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+    background: rgba(158, 218, 236, 0.781);
+}
+#weather-icon {
+    box-sizing: content-box;
+    font-family: weather;
+    font-size: 200px;
+    margin: auto;
+    /* padding: 20px; */
+    text-align: center;
+}
+.weather-icon {
+    font-family: weather;
+    font-size: 50px;
+}
+/* footer {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+} */
+#error {
+    padding: 5px;
+}
+
+@media screen and (max-width: 650px) {
+    #weather-data {
+        width: 70%;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+    } 
+    #city-name{
+        padding: 15px;
+        width: 90%;
+    }
+    #button {
+        padding: 15px;
+        border: 1px solid black;
+        background: lightblue;
+        margin: auto;
+        margin-top: 5px;
+    }   
+}
