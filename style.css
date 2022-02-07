@@ -7,7 +7,7 @@
     transition: 200ms;
 }
 body {
-    background-image: url(map.jpg);
+    background-image: url(bg.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,6 +21,7 @@ body {
 }
 #title {
     width: 100%;
+    color: white;
     text-align: center;
 }
 #city-name{
